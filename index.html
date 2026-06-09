@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KONXEPTS INC. | Process Improvement & Logistics Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+    color:#222;
+    background:#fff;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+:root{
+    --primary:#E10600;
+    --dark:#111111;
+    --light:#f8f8f8;
+}
+
+header{
+    background:#fff;
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    height:70px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95));
+}
+
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.hero h1{
+    font-family:'Montserrat', sans-serif;
+    font-size:4rem;
+    font-weight:800;
+    color:var(--dark);
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:var(--primary);
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:40px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:var(--primary);
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    font-family:'Montserrat', sans-serif;
+    color:var(--dark);
+    margin-bottom:15px;
+}
+
+.red-line{
+    width:80px;
+    height:4px;
+    background:var(--primary);
+    margin:auto;
+}
+
+.about{
+    background:var(--light);
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    padding:40px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    padding:8px 0;
+}
+
+.why{
+    background:var(--light);
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-box{
+    text-align:center;
+    padding:30px;
+}
+
+.why-box h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+}
+
+.email{
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--primary);
+    margin-top:25px;
+}
+
+footer{
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+    padding:30px 20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.logo{
+    height:55px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <img src="logo.png" alt="KONXEPTS INC." class="logo">
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <h1>
+            Operational Excellence.
+            <span>Strategic Logistics.</span>
+            Sustainable Growth.
+        </h1>
+
+        <p>
+            Since 2009, KONXEPTS INC. has helped organizations improve efficiency,
+            optimize operations, and implement practical solutions that drive measurable results.
+        </p>
+
+        <a href="#contact" class="btn">
+            Contact Us
+        </a>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>About KONXEPTS</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="about-content">
+            <p>
+                Established in 2009, KONXEPTS INC. provides practical,
+                results-driven solutions that help organizations operate
+                more efficiently and effectively.
+            </p>
+
+            <br>
+
+            <p>
+                Our approach combines operational expertise, process
+                improvement strategies, and logistics planning to help
+                businesses streamline workflows, reduce inefficiencies,
+                and improve overall performance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="card">
+
+                <h3>Process Improvement</h3>
+
+                <ul>
+                    <li>✓ Workflow Optimization</li>
+                    <li>✓ Operational Analysis</li>
+                    <li>✓ Program Development</li>
+                    <li>✓ Process Mapping</li>
+                    <li>✓ Standard Operating Procedures</li>
+                    <li>✓ Continuous Improvement Strategies</li>
+                    <li>✓ Performance Monitoring</li>
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Logistics Solutions</h3>
+
+                <ul>
+                    <li>✓ Route Optimization</li>
+                    <li>✓ Logistics Planning</li>
+                    <li>✓ Resource Allocation</li>
+                    <li>✓ Operational Coordination</li>
+                    <li>✓ Scheduling Solutions</li>
+                    <li>✓ Distribution Support</li>
+                    <li>✓ Efficiency Assessments</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="why" class="why">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why Choose KONXEPTS</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-box">
+                <h3>15+ Years Experience</h3>
+                <p>Providing practical business and operational solutions since 2009.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>Results Focused</h3>
+                <p>Solutions designed to improve efficiency and support growth.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>Strategic Thinking</h3>
+                <p>Combining operational expertise with practical implementation.</p>
+            </div>
+
+            <div class="why-box">
+                <h3>Client Driven</h3>
+                <p>Every solution is tailored to your organization's goals.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Let's Build Better Solutions Together</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="contact-box">
+
+            <p>
+                Whether you're looking to improve internal operations,
+                streamline business processes, or optimize logistics
+                performance, KONXEPTS INC. is ready to help.
+            </p>
+
+            <div class="email">
+                info@konxepts.com
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    KONXEPTS INC. | EST. 2009
+</footer>
+
+</body>
+</html>
