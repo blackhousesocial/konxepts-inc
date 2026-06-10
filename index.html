@@ -3,344 +3,294 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KONXEPTS INC.</title>
 
-<title>KONXEPTS INC. | Process Improvement & Logistics Solutions</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Open Sans',sans-serif;
-    color:#222;
-    line-height:1.7;
-    background:#fff;
+font-family:'Open Sans',sans-serif;
+color:#222;
+line-height:1.7;
 }
 
 :root{
-    --primary:#E10600;
-    --dark:#111111;
-    --light:#f8f8f8;
+--red:#E10600;
+--dark:#111;
+--light:#f7f7f7;
 }
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
 /* HEADER */
 
 header{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,0.95);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid rgba(0,0,0,0.05);
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(8px);
+border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 .nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
 }
 
 .logo{
-    height:75px;
+height:75px;
 }
 
 .nav-links{
-    display:flex;
-    gap:35px;
+display:flex;
+gap:35px;
 }
 
 .nav-links a{
-    text-decoration:none;
-    color:#222;
-    font-weight:600;
-    transition:.3s;
+text-decoration:none;
+color:#222;
+font-weight:600;
+position:relative;
 }
 
 .nav-links a:hover{
-    color:var(--primary);
-}
-
-.nav-links a{
-    position:relative;
+color:var(--red);
 }
 
 .nav-links a::after{
-    content:'';
-    position:absolute;
-    width:0;
-    height:2px;
-    left:0;
-    bottom:-5px;
-    background:#E10600;
-    transition:.3s;
+content:'';
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:var(--red);
+transition:.3s;
 }
 
 .nav-links a:hover::after{
-    width:100%;
+width:100%;
 }
 
 /* HERO */
 
 .hero{
-    min-height:100vh;
-    background:url('hero-image.png') center center/cover no-repeat;
-    display:flex;
-    align-items:center;
+min-height:100vh;
+background:url('hero-image.png') center center/cover no-repeat;
+display:flex;
+align-items:center;
 }
 
 .hero-content{
-    max-width:600px;
-    margin-left:80px;
+max-width:600px;
+margin-left:80px;
 }
 
 .hero h1{
-    font-family:'Montserrat',sans-serif;
-    font-size:3.3rem;
-    line-height:1.1;
-    margin-bottom:25px;
-    color:#111;
+font-family:'Montserrat',sans-serif;
+font-size:3.3rem;
+line-height:1.1;
+margin-bottom:25px;
+color:#111;
 }
 
 .hero span{
-    color:var(--primary);
+color:var(--red);
 }
 
 .hero p{
-    font-size:1.1rem;
-    color:#333;
-    margin-bottom:35px;
-    max-width:500px;
-    background:rgba(255,255,255,.70);
-    padding:15px 20px;
-    border-radius:12px;
-    backdrop-filter:blur(3px);
+max-width:500px;
+background:rgba(255,255,255,.75);
+padding:15px 20px;
+border-radius:12px;
+margin-bottom:30px;
 }
 
 .btn{
-    display:inline-block;
-    background:var(--primary);
-    color:white;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:700;
-    transition:.3s;
+display:inline-block;
+padding:15px 35px;
+background:var(--red);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
-}
+/* STATS */
 
-/* EXPERIENCE */
-
-.experience{
-    background:#111;
-    color:white;
-    padding:80px 0;
+.stats{
+background:#111;
+color:white;
+padding:70px 0;
 }
 
 .stats-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-    text-align:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
 }
 
-.stat-box h3{
-    font-size:2.5rem;
-    color:#E10600;
-    margin-bottom:10px;
-    font-family:'Montserrat',sans-serif;
+.stat h3{
+font-size:2.4rem;
+color:var(--red);
+font-family:'Montserrat',sans-serif;
+margin-bottom:10px;
 }
 
-.stat-box p{
-    color:#ddd;
+.stat p{
+color:#ddd;
 }
 
 /* SECTIONS */
 
 section{
-    padding:100px 0;
+padding:100px 0;
+}
+
+.about,
+.why{
+background:var(--light);
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:60px;
+text-align:center;
+margin-bottom:50px;
 }
 
 .section-title h2{
-    font-size:2.5rem;
-    font-family:'Montserrat',sans-serif;
-    margin-bottom:15px;
+font-size:2.5rem;
+font-family:'Montserrat',sans-serif;
 }
 
 .red-line{
-    width:80px;
-    height:4px;
-    background:var(--primary);
-    margin:auto;
-}
-
-/* ABOUT */
-
-.about{
-    background:#f8f8f8;
-    padding:80px 0;
+width:80px;
+height:4px;
+background:var(--red);
+margin:15px auto 0;
 }
 
 .about-content{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
+max-width:850px;
+margin:auto;
+text-align:center;
 }
 
 /* SERVICES */
 
 .services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:35px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .card{
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    border-top:5px solid var(--primary);
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
+background:white;
+padding:35px;
+border-radius:15px;
+border-top:5px solid var(--red);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .card h3{
-    color:var(--primary);
-    margin-bottom:20px;
-    font-family:'Montserrat',sans-serif;
+color:var(--red);
+margin-bottom:15px;
 }
 
 .card ul{
-    list-style:none;
+list-style:none;
 }
 
 .card li{
-    padding:8px 0;
+padding:7px 0;
 }
 
 /* WHY US */
 
-.why{
-    background:#f8f8f8;
-}
-
 .why-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .why-box{
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.why-box:hover{
-    transform:translateY(-6px);
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
 }
 
 .why-box h3{
-    color:var(--primary);
-    margin-bottom:15px;
+color:var(--red);
+margin-bottom:15px;
 }
 
 /* CONTACT */
 
 .contact{
-    text-align:center;
-}
-
-.contact-box{
-    max-width:700px;
-    margin:auto;
+text-align:center;
 }
 
 .email{
-    margin-top:25px;
+margin-top:20px;
 }
 
 .email a{
-    font-size:1.8rem;
-    font-weight:700;
-    color:var(--primary);
-    text-decoration:none;
+font-size:1.8rem;
+font-weight:700;
+color:var(--red);
+text-decoration:none;
 }
-
-.email a:hover{
-    text-decoration:underline;
-}
-
-/* FOOTER */
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
 }
-
-/* MOBILE */
-
 @media(max-width:768px){
 
-.hero{
-    background-position:70% center;
-}
-
 .hero-content{
-    margin:0 25px;
+margin:0 25px;
 }
 
 .hero h1{
-    font-size:2.5rem;
+font-size:2.5rem;
 }
 
 .nav{
-    flex-direction:column;
-    gap:15px;
+flex-direction:column;
+gap:10px;
 }
 
 .nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .logo{
-    height:55px;
+height:60px;
 }
 
 }
@@ -351,7 +301,6 @@ footer{
 <body>
 
 <header>
-
 <div class="container nav">
 
 <img src="logo.png" alt="KONXEPTS Logo" class="logo">
@@ -364,7 +313,6 @@ footer{
 </div>
 
 </div>
-
 </header>
 
 <section class="hero">
@@ -387,23 +335,25 @@ Supporting organizations with strategic process improvement and logistics soluti
 
 </div>
 
-<section class="experience">
+</section>
+
+<section class="stats">
 
 <div class="container">
 
 <div class="stats-grid">
 
-<div class="stat-box">
+<div class="stat">
 <h3>15+</h3>
 <p>Years Experience</p>
 </div>
 
-<div class="stat-box">
+<div class="stat">
 <h3>2009</h3>
 <p>Established</p>
 </div>
 
-<div class="stat-box">
+<div class="stat">
 <h3>Operations & Logistics</h3>
 <p>Solutions Expertise</p>
 </div>
@@ -520,7 +470,7 @@ We work with businesses to identify inefficiencies, strengthen processes, and im
 
 <div class="why-box">
 <h3>Operational Excellence</h3>
-<p>Building efficient systems that support long-term business success.</p>
+<p>Building efficient systems that support sustainable growth and long-term success.</p>
 </div>
 
 </div>
@@ -538,16 +488,12 @@ We work with businesses to identify inefficiencies, strengthen processes, and im
 <div class="red-line"></div>
 </div>
 
-<div class="contact-box">
-
 <p>
 Whether you're looking to improve operations, streamline business processes, or optimize logistics performance, KONXEPTS INC. is ready to help.
 </p>
 
 <div class="email">
 <a href="mailto:info@konxepts.com">info@konxepts.com</a>
-</div>
-
 </div>
 
 </div>
