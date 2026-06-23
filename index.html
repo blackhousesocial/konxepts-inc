@@ -151,51 +151,26 @@ font-weight:700;
 
 /* EXPERIENCE */
 
-.stats{
+.experience{
     background:#111;
     color:white;
-    padding:50px 0;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
     text-align:center;
+    padding:90px 20px;
 }
 
-.stat-item{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.stat-number{
+.experience h2{
+    font-size:2.5rem;
     font-family:'Montserrat',sans-serif;
-    font-size:2rem;
-    font-weight:700;
-    color:white;
+    margin-bottom:20px;
 }
 
-.stat-label{
-    font-size:0.9rem;
-    text-transform:uppercase;
-    letter-spacing:.12em;
-    color:#bbb;
+.experience p{
+    max-width:800px;
+    margin:auto;
+    color:#ddd;
+    font-size:1.15rem;
 }
 
-@media(max-width:768px){
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:35px;
-    }
-
-    .stat-number{
-        font-size:1.5rem;
-    }
-
-}
 /* SECTIONS */
 
 section{
@@ -408,29 +383,15 @@ Helping businesses improve efficiency, streamline processes, and achieve measura
 
 </section>
 
-<section class="stats">
+<section class="experience">
 
-    <div class="container stats-grid">
+    <div class="container">
 
-        <div class="stat-item">
-            <span class="stat-number">15+</span>
-            <span class="stat-label">Years Experience</span>
-        </div>
+        <h2>15+ Years of Experience</h2>
 
-        <div class="stat-item">
-            <span class="stat-number">2009</span>
-            <span class="stat-label">Established</span>
-        </div>
-
-        <div class="stat-item">
-            <span class="stat-number">Operations</span>
-            <span class="stat-label">Consulting</span>
-        </div>
-
-        <div class="stat-item">
-            <span class="stat-number">Logistics</span>
-            <span class="stat-label">Solutions</span>
-        </div>
+        <p>
+            Delivering practical operational and logistics solutions since 2009.
+        </p>
 
     </div>
 
