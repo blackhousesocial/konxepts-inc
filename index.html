@@ -199,14 +199,28 @@ background:var(--red);
 margin:15px auto 0;
 }
 
-.about-content{
-max-width:800px;
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+max-width:1000px;
 margin:auto;
-text-align:left;
 }
 
-.about-content p{
-margin-bottom:25px;
+.about-heading h2{
+font-family:'Montserrat',sans-serif;
+font-size:3rem;
+line-height:1.1;
+}
+
+.about-heading span{
+color:var(--red);
+}
+
+.about-text p{
+font-size:1.1rem;
+margin-bottom:20px;
 }
 
 /* SERVICES */
@@ -406,17 +420,28 @@ Helping businesses improve efficiency, streamline processes, and achieve measura
 <div class="red-line"></div>
 </div>
 
-<div class="about-content">
+<div class="about-grid">
 
-<p>
-Established in 2009, KONXEPTS INC. helps organizations improve operational efficiency through practical consulting and logistics solutions.
-</p>
+    <div class="about-heading">
 
-<p>
-We work closely with businesses to identify challenges, streamline processes, and implement strategies that support productivity, performance, and long-term growth.
-</p>
+        <h2>
+            Practical Solutions.<br>
+            <span>Proven Experience.</span>
+        </h2>
 
-</div>
+    </div>
+
+    <div class="about-text">
+
+        <p>
+            For more than 15 years, KONXEPTS has helped organizations improve efficiency, streamline operations, and strengthen logistics performance.
+        </p>
+
+        <p>
+            We focus on practical implementation, measurable results, and long-term operational success.
+        </p>
+
+    </div>
 
 </div>
 
