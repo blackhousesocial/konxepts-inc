@@ -222,7 +222,7 @@ color:var(--red);
 
 .about-grid{
 display:grid;
-grid-template-columns:300px 1fr 500px;
+grid-template-columns:1.1fr 1fr 1.4fr;
 gap:40px;
 align-items:start;
 }
@@ -365,6 +365,29 @@ color:white;
 text-align:center;
 padding:25px;
 }
+
+/* TABLET & SMALLER DESKTOPS */
+
+@media(max-width:1200px){
+
+.about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.about-text{
+    border-left:none;
+    padding:0;
+}
+
+.about-features{
+    border-left:none;
+}
+
+}
+
+/* MOBILE */
+    
 @media(max-width:768px){
 
 .nav{
